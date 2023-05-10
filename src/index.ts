@@ -9,8 +9,8 @@ export * from './errors/request-validation-error'
 export * from './middlewares/current-user'
 export * from './middlewares/error-handler'
 export * from './middlewares/require-auth'
-export * from './middlewares/request-validation'
+export * from './middlewares/validate-request'
 
 
 
-// git commit & push npm version patch || npm run build || npm publish
+// git commit & push || npm version patch || npm run build || npm publish

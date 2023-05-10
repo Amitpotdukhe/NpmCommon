@@ -1,9 +1,9 @@
-import { Request, Response, NextFunction } from "express";
-import jwt from "jsonwebtoken";
+import { Request, Response, NextFunction } from 'express';
+import jwt from 'jsonwebtoken';
 
 interface UserPayload {
-  id: String;
-  email: String;
+  id: string;
+  email: string;
 }
 
 declare global {
@@ -29,9 +29,7 @@ export const currentUser = (
       process.env.JWT_KEY!
     ) as UserPayload;
     req.currentUser = payload;
-  } catch (error) {
-    console.log(error);
-  }
+  } catch (err) {}
 
   next();
 };
