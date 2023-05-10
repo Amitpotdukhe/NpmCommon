@@ -1,5 +1,5 @@
 {
-  "name": "@jjcommon",
+  "name": "@jjcommon/common",
   "version": "1.0.1",
   "description": "",
   "main": "./build/index.js",
